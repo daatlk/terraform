@@ -7,7 +7,7 @@ resource "azurerm_linux_virtual_machine" "linux-vm1" {
   network_interface_ids = [
     azurerm_network_interface.nic1.id,
   ]
-
+  disable_password_authentication = false
   admin_password = "password"
 
   os_disk {
