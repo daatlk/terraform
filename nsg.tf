@@ -17,4 +17,5 @@ resource "azurerm_network_security_group" "nsg-1" {
 
   tags = {
     environment = var.tags
+  }
 }
