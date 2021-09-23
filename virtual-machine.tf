@@ -2,7 +2,7 @@ resource "azurerm_linux_virtual_machine" "linux-vm1" {
   name                = "linux-machine-1"
   resource_group_name = azurerm_resource_group.resource_group-1.name
   location            = var.location
-  size                = "Standard_F2"
+  size                = "Standard_F1"
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.nic1.id,
